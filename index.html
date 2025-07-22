@@ -3331,8 +3331,8 @@ async function sendEmail() {
     
     showNotification('Sending your message...', 'info');
     
-    // Send email via backend API
-    const url = 'http://localhost:3000/send-email';
+    // Send email via deployed backend on Render
+    const url = 'https://portfolio-pgea.onrender.com/send-email';
     console.log('Sending request to:', url);
     
     const response = await fetch(url, {
